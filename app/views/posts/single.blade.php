@@ -18,7 +18,7 @@
 			<div class="col-sm-12 col-md-6">
 				<p><i class="fa fa-check"></i> 投稿日：{{ date("Y年 m月 d日",strtotime($post->created_at)) }}</p>
 				<p><i class="fa fa-check"></i> 料金：{{ $post->price }}</p>
-				<p><i class="fa fa-check"></i> カテゴリー：{{ $post->category->name }}</p>
+				<p><i class="fa fa-check"></i> カテゴリー：{{ $post->Category->name }}</p>
 				<p><i class="fa fa-check"></i> 地域：{{ $post->area }}</p>
 			</div>
 

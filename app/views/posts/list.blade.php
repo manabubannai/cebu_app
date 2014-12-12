@@ -7,7 +7,7 @@
 		<?php else: ?>
 			{{ HTML::image('images/sample.jpg', 'a picture', array('class' => 'img-responsive')) }}
 		<?php endif; ?>
-		<div class="hover-text">{{ $post->category->name }}</div>
+		<div class="hover-text">{{ $post->Category->name }}</div>
 	</div>
 	<div class="col-sm-7 col-md-7 classifieds-detail">
 		<h3 class="no-space">{{ link_to("/posts/{$post->id}", $post->title) }}</h3>
