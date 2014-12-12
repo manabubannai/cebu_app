@@ -17,6 +17,13 @@ class PostSeeder extends Seeder{
 			$post->save();
 		}
 
+	// アドミンユーザーの追加
+	$admin = new User;
+	$admin->email = "mnbmnb0524@gmail.com";
+	$admin->password = "admin";
+	$admin->phone = 1111;
+	$admin->save();
+
 	// カテゴリーを追加する
 	$cat = new Category;
 	$cat->name = "コンピューター／携帯電話";
