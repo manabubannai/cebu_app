@@ -7,7 +7,7 @@ class Post extends Eloquent{
 		return $this->belongsTo('User');
 	}
 
-	public function category(){
+	public function Category(){
 		return $this->belongsTo('category', 'cat_id');
 	}
 
