@@ -1,0 +1,175 @@
+body {
+	font-family:  "A-OTF 新ゴ Pr5 L",A-OTF Shin Go Pr5 L,"mplus-1p-regular", Meiryo, "Hiragino Kaku Gothic Pro", sans-serif;
+}
+h1{
+	font-size: 23px;
+}
+
+h2 {
+	font-size: 20px;
+}
+ul {
+	padding: 0;
+}
+ul li {
+	list-style: none;
+	margin: 10px 0;
+}
+
+/*----------------------------------------------------------*/
+/* ナビバー */
+/*----------------------------------------------------------*/
+.nav-header {
+	padding: 10px 0;
+}
+.nav-menu {
+	margin: 50px auto;
+}
+
+/*----------------------------------------------------------*/
+/* トップページ */
+/*----------------------------------------------------------*/
+.top-1 {
+	margin-bottom: 50px;
+}
+.top-start {
+	margin: 0 auto;
+	height: 300px;
+}
+.classifieds-title {
+	margin-bottom: 0px;
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 100%;
+}
+.classifieds-detail h3{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.pink-button {
+	background: #fa7474;
+	color: #fff;
+}
+.for-bg {
+	background: #f5f6f7;
+	padding-left: 6px;
+	padding-right: 15px;
+	padding-top: 20px;
+	margin: 15px;
+	margin-bottom: 25px;
+}
+
+/*----------------------------------------------------------*/
+/* クラシファイド一覧 */
+/*----------------------------------------------------------*/
+.classifieds-list ,.white{
+	background: #fff;
+}
+.category {
+	border: 1px solid #A5A5A5;
+}
+.category ul{
+	margin-left: 15px;
+}
+.category ul li:before{
+	/*content: "・";*/
+}
+
+/*----------------------------------------------------------*/
+/* クラシファイドシングルページ */
+/*----------------------------------------------------------*/
+p pre{
+	background: #fff;
+}
+
+/*----------------------------------------------------------*/
+/* 検索フォーム */
+/*----------------------------------------------------------*/
+.search {
+	text-align: center;
+	margin: 40px 0;
+}
+
+/*----------------------------------------------------------*/
+/* フッター */
+/*----------------------------------------------------------*/
+.logo-footer {
+	margin-bottom: 20px;
+}
+.footer {
+	padding: 20px 0;
+}
+.copyright {
+	padding: 15px 0;
+}
+.footer p.copyright {
+	color: #fff;
+	margin: 0;
+}
+
+/*----------------------------------------------------------*/
+/* カスタマイズ */
+/*----------------------------------------------------------*/
+.pink {
+	background: #e43f53;
+	color: #fff;
+}
+.blue {
+	background: #5ebefb;
+	color: #fff;
+}
+.gray {
+	background: #e6e7e7;
+}
+.dark-gray {
+	background: #aaaaaa;
+}
+
+.no-space{
+	padding: 0;
+	margin: 0;
+}
+.space{
+	margin: 0 20px;
+}
+.space-right{
+	margin-right: 30px;
+}
+.clearfix {
+	clear: both;
+}
+.m-b-30 {
+	margin-bottom: 30px;
+}
+.img-center {
+	margin: 0 auto;
+}
+.add-padding {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+/*----------------------------------------------------------*/
+/* 画像に文字を重ねる */
+/*----------------------------------------------------------*/
+.hover-text {
+	top: 0px;
+	left: 17px;
+	position: absolute;
+	background-color: rgba(110, 174, 144, 1);
+	color: #fff;
+	padding: 5px;
+}
+.thumbnail{
+	position:relative;
+}
+/* スマホ用のCSS */
+@media only screen and (max-width: 479px) {
+	div.sp-none {
+		display: none;
+	}
+}
+
+/* タブレット用のCSS */
+@media only screen and (max-width: 740px) {
+}
