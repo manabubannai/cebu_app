@@ -44,7 +44,7 @@ Route::filter('auth', function()
 		else
 		{
 			return Redirect::guest('login')
-			->with('flash_error', 'ログインしてください');;
+			->with('flash_error', 'ログイン、または会員登録が必要です');;
 		}
 	}
 });

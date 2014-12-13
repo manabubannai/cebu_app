@@ -28,12 +28,12 @@
 
 				<div class="form-group">
 					{{-- バリデーションのエラー表示 --}}
-					@foreach($errors->get('category') as $message)
+					@foreach($errors->get('cat_id') as $message)
 						<span class="bg-danger">{{ $message }}</span>
 					@endforeach
-					<label for="category" class="control-label">※カテゴリー</label>
+					<label for="cat_id" class="control-label">※カテゴリー</label>
 					<div class="">
-						<select name="category" type="text" class="form-control">
+						<select name="cat_id" type="text" class="form-control">
 							<option></option>
 
 							@foreach($cats as $cat)
@@ -53,9 +53,8 @@
 					<div class="">
 						<select name="area" type="text" class="form-control">
 							<option></option>
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
+							<option name="セブ島" value="セブ島">セブ島</option>
+							<option name="マクタン島" value="マクタン島">マクタン島</option>
 						</select>
 					</div>
 				</div>
@@ -72,7 +71,7 @@
 				</div>
 
 				<div class="form-group">
-					<label for="price" class="control-label">料金</label>
+					<label for="price" class="control-label">料金（円）</label>
 					<div class="">
 						{{ Form::text('price', null, array('class' => 'form-control')) }}
 					</div>

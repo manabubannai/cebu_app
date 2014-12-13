@@ -11,16 +11,26 @@ class PostSeeder extends Seeder{
 			$post->author_id = 1;
 			$post->price = "1200";
 			$post->cat_id = 1;
-			$post->area = 1;
+			$post->area = "セブ島";
 			$post->read_more = substr($content, 0, 120);
 			$post->content = $content;
 			$post->save();
 		}
 
+		$post = new Post;
+		$post->title = "Hoge番目の投稿";
+		$post->author_id = 1;
+		$post->price = "1200";
+		$post->cat_id = 1;
+		$post->area = "マクタン島";
+		$post->read_more = substr($content, 0, 120);
+		$post->content = $content;
+		$post->save();
+
 	// アドミンユーザーの追加
 	$admin = new User;
 	$admin->email = "mnbmnb0524@gmail.com";
-	$admin->password = "admin";
+	$admin->password = Hash::make("admin");
 	$admin->phone = 1111;
 	$admin->save();
 

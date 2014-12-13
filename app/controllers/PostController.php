@@ -49,8 +49,7 @@ class PostController extends \BaseController {
 	 */
 	public function create()
 	{
-		$cats = Category::get();
-		return View::make('posts.create')->with('cats', $cats);
+		// routesのフィルターで管理
 	}
 
 
@@ -64,7 +63,7 @@ class PostController extends \BaseController {
 		$rules = [
 			'title' => 'required|max:24',
 			'content'=>'required',
-			'category' => 'required',
+			'cat_id' => 'required',
 			'area' => 'required',
 		];
 
@@ -72,7 +71,7 @@ class PostController extends \BaseController {
 			'title.required' => 'タイトルを正しく入力してください。',
 			'title.max' => 'タイトルが長過ぎます。',
 			'content.required' => '本文を正しく入力してください。',
-			'category.required' => 'カテゴリーを選択してください。',
+			'cat_id.required' => 'カテゴリーを選択してください。',
 			'area.required' => '地域を選択してください。',
 		);
 
@@ -80,10 +79,11 @@ class PostController extends \BaseController {
 
 		if ($validator->passes()) {
 			$post = new Post;
+			$post->author_id = Auth::id();
 			$post->title = Input::get('title');
 			$post->content = Input::get('content');
 			$post->price = Input::get('price');
-			$post->category = Input::get('category');
+			$post->cat_id = Input::get('cat_id');
 			$post->area = Input::get('area');
 			$post->read_more = (strlen($post->content) > 180) ? substr($post->content, 0, 180) : $post->content;
 

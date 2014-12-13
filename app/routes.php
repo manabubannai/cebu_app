@@ -52,8 +52,11 @@ Route::get('logout', array('uses' => 'HomeController@doLogout'));
 Route::get('posts/create', array(
 	'before' => 'auth',
 	function(){
+		$cats = Category::get();
+
 		// ログイン済のユーザーは投稿ページにリダイレクト
-		return View::make('posts.create');
+		return View::make('posts.create')
+				->with('cats', $cats);
 	}
 ));
 
