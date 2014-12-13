@@ -29,7 +29,7 @@ $app = new Illuminate\Foundation\Application;
 // ));
 
 $env = $app->detectEnvironment(array(
-	'local' => array('Manabu-2.local'),
+	'local' => array('ACA80351.ipt.aol.com'),
 ));
 
 /*

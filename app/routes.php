@@ -18,6 +18,22 @@ Route::resource('', 'PostController@top');
 
 
 /*----------------------------------------------------------*/
+// クラシファイド関連
+/*----------------------------------------------------------*/
+// 出品者へのお問い合わせフォーム
+// これはリソースコントローラーよりも先時記述する必要がある。
+Route::post('posts/{id}/contact', 'PostController@contact');
+
+// postsにアクセスしたら、PostControllerを起動する
+Route::resource('posts', 'PostController');
+
+// contactsにアクセスしたら、ContactControllerを起動する
+Route::resource('contacts', 'ContactController');
+
+// categoryにアクセスしたら、CategoryControllerを起動する
+Route::resource('category', 'CategoryController');
+
+/*----------------------------------------------------------*/
 // 会員登録関連
 /*----------------------------------------------------------*/
 // usersにアクセスしたら、UserControllerを起動する
@@ -41,21 +57,6 @@ Route::get('posts/create', array(
 	}
 ));
 
-/*----------------------------------------------------------*/
-// クラシファイド関連
-/*----------------------------------------------------------*/
-// 出品者へのお問い合わせフォーム
-// これはリソースコントローラーよりも先時記述する必要がある。
-Route::post('posts/{id}/contact', 'PostController@contact');
-
-// postsにアクセスしたら、PostControllerを起動する
-Route::resource('posts', 'PostController');
-
-// contactsにアクセスしたら、ContactControllerを起動する
-Route::resource('contacts', 'ContactController');
-
-// categoryにアクセスしたら、CategoryControllerを起動する
-Route::resource('category', 'CategoryController');
 
 /*----------------------------------------------------------*/
 // 掲示板関連
