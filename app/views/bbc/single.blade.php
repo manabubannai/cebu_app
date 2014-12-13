@@ -9,14 +9,14 @@
 				<small>投稿日：{{ date("Y年 m月 d日",strtotime($post->created_at)) }}</small>
 			</h2>
 			<p>カテゴリー：{{ $post->bbccategory->name }}</p>
-			<p>{{ $post->content }}</p>
+			<pre class="white">{{ $post->content }}</pre>
 
 			<hr />
 
 			@if(empty($post->bbccomments))
 			<h3>コメント一覧</h3>
 				@foreach($post->bbccomments as $single_comment)
-					<h4>名前：{{ $single_comment->commenter }}</h4>
+					<h4>名前：{{ $single_comment->commenter }} <small>{{ $single_comment->created_at }}</small></h4>
 					<p>{{ $single_comment->comment }}</p><br />
 				@endforeach
 			<hr />

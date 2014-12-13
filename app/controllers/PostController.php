@@ -31,7 +31,7 @@ class PostController extends \BaseController {
 						->orderBy('created_at')
 						->paginate(10);
 		}else{
-			$posts = Post::orderBy('created_at')->paginate(10);
+			$posts = Post::orderBy('created_at', 'DESC')->paginate(10);
 		}
 
 		return View::make('posts.index')
