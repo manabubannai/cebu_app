@@ -34,7 +34,7 @@
 			</a>
 		</div>
 		<div class="col-xs-2">
-			<a href="{{URL::to('/column')}}">
+			<a href="http://blog.phiino.com/">
 			{{ HTML::image('images/nav/column.png', 'column', array('class' => 'nav')) }}
 			</a>
 		</div>
