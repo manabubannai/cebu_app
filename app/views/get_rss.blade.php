@@ -1,5 +1,5 @@
 <?php
-	$rssdata = simplexml_load_file("http://manablog.org/feed/");
+	$rssdata = simplexml_load_file("http://blog.phiino.com/?feed=rss2");
 
 	// 読み込み件数を決定する
 	$num_of_data = 5;
