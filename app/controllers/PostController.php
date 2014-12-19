@@ -100,7 +100,7 @@ class PostController extends \BaseController {
 				File::exists(public_path() . '/images/' . Auth::user()->name) or File::makeDirectory(public_path() . '/images/' . Auth::user()->name);
 
 				// 画像をリサイズ
-				$image->resize(100, null, function ($constraint) {
+				$image->resize(300, null, function ($constraint) {
 					$constraint->aspectRatio();
 				});
 
