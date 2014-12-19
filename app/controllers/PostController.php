@@ -4,7 +4,7 @@ class PostController extends \BaseController {
 
 	public function top()
 	{
-		$posts = Post::orderBy('created_at')->paginate(10);
+		$posts = Post::orderBy('created_at', 'DESC')->paginate(10);
 
 		return View::make('top')
 			->with('posts', $posts);
@@ -89,14 +89,24 @@ class PostController extends \BaseController {
 
 			// 以下で画像のアップロード処理を行う
 			if (Input::file('image')) {
+
 				// getClientOriginalName()：アップロードしたファイルのオリジナル名を取得します
 				$fileName = Input::file('image')->getClientOriginalName();
+
 				// getRealPath()：アップロードしたファイルのパスを取得します。
 				$image = Image::make(Input::file('image')->getRealPath());
+
 				// Auth::user()->nameのフォルダがあるかどうかを確認し、ない場合は新規作成する
 				File::exists(public_path() . '/images/' . Auth::user()->name) or File::makeDirectory(public_path() . '/images/' . Auth::user()->name);
+
+				// 画像をリサイズ
+				$image->resize(100, null, function ($constraint) {
+					$constraint->aspectRatio();
+				});
+
 				// 画像をサーバーに保存する
 				$image->save(public_path() . '/images/' . Auth::user()->name . '/' . $fileName);
+
 				//DBにファイルパスを保存する
 				$post->image = 'images/'. $fileName;
 			}

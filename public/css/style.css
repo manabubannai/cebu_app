@@ -23,7 +23,7 @@ ul li {
 	padding: 10px 0;
 }
 .nav-menu {
-	margin: 50px auto;
+	margin: 35px auto 45px auto
 }
 
 /*----------------------------------------------------------*/
@@ -156,9 +156,10 @@ p pre{
 	top: 0px;
 	left: 17px;
 	position: absolute;
-	background-color: rgba(110, 174, 144, 1);
+	background-color: #131313;
 	color: #fff;
 	padding: 5px;
+	opacity: 0.6;
 }
 .thumbnail{
 	position:relative;
