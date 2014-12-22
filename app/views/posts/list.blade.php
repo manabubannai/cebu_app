@@ -1,5 +1,5 @@
 {{ HTML::image('images/top/classifieds-title.jpg', 'classifieds-title', array('class' => 'classifieds-title sp-none')) }}
-<h2 class="pc-noe text-center">クラシファイド最新情報<br />
+<h2 class="pc-none text-center">クラシファイド最新情報<br />
 <small>みんなで探そうより良いアイテム</small></h2>
 @foreach($posts as $post)
 <div class="for-bg">
