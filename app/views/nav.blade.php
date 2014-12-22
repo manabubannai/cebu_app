@@ -6,7 +6,7 @@
 			</div>
 			<div class="col-xs-4 pull-right sp-none">
 				<span>PHIINOとは？</span>
-				<span>お問い合わせ</span>
+				<span><a href="http://blog.phiino.com/contact/">お問い合わせ</a></span>
 			</div>
 		</div>
 	</div>
