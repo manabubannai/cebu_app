@@ -6,7 +6,7 @@
 	@include('bbc/search')
 </div>
 
-<div class="container">
+<div class="container container-new">
 	<div class="row">
 		<div class="col-xs-8">
 			@foreach($posts as $post)

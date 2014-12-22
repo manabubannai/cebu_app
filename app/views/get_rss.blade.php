@@ -15,10 +15,10 @@
 		$link = $entry->link; //リンクURL取得
 
 		//出力内容に日付けを入れる
-		$outdata .= '<li><a href="' . $link . '">' . $date;
+		$outdata .= '<li>' . $date;
 
 		//出力内容にリンク付きでタイトルを入れる
-		$outdata .= '<span>' . $title . '</span></a></li>';
+		$outdata .= '<a href="' . $link . '"><span class=sp-br>' . $title . '</span></a></li>';
 	}
 
-	echo '<ul>' . $outdata . '</ul>'; //実行結果を出力する
+	echo '<ul class="nav-border">' . $outdata . '</ul>'; //実行結果を出力する

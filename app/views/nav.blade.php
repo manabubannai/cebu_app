@@ -1,17 +1,50 @@
-<div class="container-fluid gray">
+<div class="container-fluid gray navbar-fixed-top">
 	<div class="container">
 		<div class="row nav-header">
-			<div class="col-xs-8">フィリピン・セブでつながる広がるコミュニティサイト：PHIINO（フィーノ）</div>
-			<div class="col-xs-4">
+			<div class="col-xs-12 col-md-8 text-center">
+				フィリピン・セブ島でつながる広がるコミュニティ：PHIINO（フィーノ）
+			</div>
+			<div class="col-xs-4 pull-right sp-none">
 				<span>PHIINOとは？</span>
-				<span>サイトマップ</span>
 				<span>お問い合わせ</span>
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="container nav-menu">
+<!-- スマホ専用のナビバー -->
+<nav class="navbar navbar-default pc-none sp-nav" role="navigation">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+			<a class="navbar-brand" href="{{URL::to('/')}}">
+			{{ HTML::image('images/logo/logo.png', 'logo', array('class' => 'sp-logo img-responsive')) }}
+			</a>
+
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="{{URL::to('/posts')}}">クラシファイド</a></li>
+				<li><a href="{{URL::to('/bbc')}}">質問掲示板</a></li>
+				<li><a href="{{URL::to('/school')}}">学校情報</a></li>
+				<li><a href="http://blog.phiino.com/">コラム</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+
+<!-- PC専用のナビバー -->
+<div class="container nav-menu sp-none container-new">
 	<div class="row">
 		<div class="col-xs-4">
 			<a href="{{URL::to('/')}}">
@@ -40,3 +73,4 @@
 		</div>
 	</div>
 </div>
+

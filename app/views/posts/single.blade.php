@@ -2,7 +2,7 @@
 @section('content')
 
 
-<div class="container m-b-30">
+<div class="container m-b-30 container-new">
 	<div class="row">
 		<div class="col-sm-12 col-md-8">
 			<h1 class="single-post-title m-b-30 add-padding"><i class="fa fa-pencil"></i> {{ $post->title }}</h1>

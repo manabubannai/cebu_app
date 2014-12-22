@@ -6,7 +6,7 @@
 	@include('posts/search')
 </div>
 
-<div class="container">
+<div class="container container-new">
 	<div class="row">
 		<div class="sp-none col-md-4 category">
 			@include('posts.category')
