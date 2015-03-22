@@ -1,7 +1,9 @@
 <div class="search">
 	{{ Form::open(array('method' => 'GET', 'class'=>'form-inline', 'role'=>'form')) }}
 
-	{{ Form::select('cat', $categories, Input::old('cat', $catQuery), array('placeholder'=>'', 'class'=>'form-control')) }}
+	{{-- Form::select('cat', $categories, Input::old('cat', $catQuery), array('default' => 'Please select one option', 'class'=>'form-control')) --}}
+
+	{{ Form::select('cat', array('default' => '') + $categories, Input::old('cat', $catQuery), array('class'=>'form-control')) }}
 
 	{{-- Form::select('cat', ['' => '', 'ネット機器' => 'ネット機器', '配列で渡す' => '配列で渡す'], Input::old('cat', $catQuery),['class'=>'form-control']) --}}
 

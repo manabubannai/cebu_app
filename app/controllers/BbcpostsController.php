@@ -12,14 +12,14 @@ class BbcpostsController extends \BaseController {
 		$query = Request::get('q');
 		if ($query) {
 			$posts = Bbcpost::Where('title', 'LIKE', '%'.$query.'%')
-						->orderBy('created_at')
+						->orderBy('created_at', 'DESC')
 						->paginate(10);
 		}else{
-			$posts = Bbcpost::orderBy('created_at')->paginate(10);
+			$posts = Bbcpost::orderBy('created_at', 'DESC')->paginate(10);
 		}
 		return View::make('bbc.index')
 				->with('posts', $posts)
-				->with('query', $query);;
+				->with('query', $query);
 	}
 
 	/**
