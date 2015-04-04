@@ -8,8 +8,13 @@
 
 <div class="container container-new">
 	<div class="row">
-		<div class="sp-none col-md-4 category">
-			@include('posts.category')
+		<div class="sp-none col-md-4">
+
+			<div class="category">
+				@include('posts.category')
+			</div>
+			<br />
+			@include('side')
 		</div>
 
 		<div class="col-sm-12 col-md-8 top-classifieds">

@@ -20,7 +20,7 @@
 					@foreach($errors->get('title') as $message)
 						<span class="bg-danger">{{ $message }}</span>
 					@endforeach
-					<label for="title" class="control-label">※タイトル（24文字以内）</label>
+					<label for="title" class="control-label">※商品名（24文字以内）</label>
 					<div class="">
 						{{ Form::text('title', null, array('class' => 'form-control')) }}
 					</div>

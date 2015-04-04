@@ -1,12 +1,12 @@
 <div class="container-fluid gray navbar-fixed-top">
-	<div class="container">
+	<div class="container-new">
 		<div class="row nav-header">
-			<div class="col-xs-12 col-md-8 text-center">
-				フィリピン・セブ島でつながる広がるコミュニティ：PHIINO（フィーノ）
+			<div class="col-xs-12 col-md-8">
+				<p class="top10 sp-no-m-b">フィリピン・セブ島でつながる広がるコミュニティ：PHIINO（フィーノ）</p>
 			</div>
 			<div class="col-xs-4 pull-right sp-none">
-				<span>PHIINOとは？</span>
-				<span><a href="http://blog.phiino.com/contact/">お問い合わせ</a></span>
+				{{-- <span>PHIINOとは？</span> --}}
+				<span>{{ link_to("/posts/create", '商品を出品する', array('class' => 'btn pink-button pull-right')) }}</span>
 			</div>
 		</div>
 	</div>

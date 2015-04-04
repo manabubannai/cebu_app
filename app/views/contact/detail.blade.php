@@ -1,4 +1,7 @@
 {{-- 以下が出品者に送信される情報 --}}
-{{ Input::get('contactName') }}
-{{ Input::get('email') }}
-{{ Input::get('msg') }}
+
+Phiinoで注文が入りました。<br />
+
+名前：{{ Input::get('contactName') }}<br />
+連絡先：{{ Input::get('email') }}<br />
+メッセージ：{{ Input::get('msg') }}<br />

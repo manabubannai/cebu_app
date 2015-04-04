@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'mnbmnb0524@gmail.com', 'name' => 'Cebu Appの管理者'),
+	'from' => array('address' => 'mnbmnb0524@gmail.com', 'name' => 'Phiino運営事務局（坂内学）'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => 'manabu.test.email@gmail.com',
+	'username' => 'phiino.cebu@gmail.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => 'MHXgRZGXnPWEMHLZkywy3cPbCz8snZ',
+	'password' => 'QYVkwN4aRaoqQgk7WWmY',
 
 	/*
 	|--------------------------------------------------------------------------
