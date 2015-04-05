@@ -221,7 +221,7 @@ class PostController extends \BaseController {
 		// 個別記事の情報を取得
 		$post = Post::find($id);
 
-		// author_id = Usre id のものを取得
+		// Usre id = author_id を取得
 		$user = User::where('id', '=', $post->author_id)->first();
 
 		$data = Input::all();

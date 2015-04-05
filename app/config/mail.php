@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'mnbmnb0524@gmail.com', 'name' => 'Phiino運営事務局（坂内学）'),
+	'from' => array('address' => 'phiino.cebu@gmail.com', 'name' => 'Phiino運営事務局（坂内学）'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => 'QYVkwN4aRaoqQgk7WWmY',
+	'password' => 'R6NFMtaQkJBkD8rfwGNkux',
 
 	/*
 	|--------------------------------------------------------------------------
