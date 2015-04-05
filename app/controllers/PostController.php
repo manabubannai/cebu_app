@@ -218,11 +218,15 @@ class PostController extends \BaseController {
 
 	public function contact($id)
 	{
+
+// author_id
+// dd($id);
+
 		// 個別記事の情報を取得
 		$post = Post::find($id);
 
 		// Usre id = author_id を取得
-		$user = User::where('id', '=', $post->author_id)->first();
+		$user = User::where('id', '=', $id)->first();
 
 		$data = Input::all();
 		// $data = [ 'contactName' => Input::get('contactName') ];
@@ -248,8 +252,8 @@ class PostController extends \BaseController {
 			// contact.detailは出品者送信される内容
 			Mail::send('contact.detail',$data, function($message) use($user) {
 				$message->to($user->email) // 記事の作成者に連絡
-						->bcc('manabu.bannai@gmail.com') //管理人に連絡
-						->subject('メールの件名');
+						->bcc('phiino.cebu@gmail.com') //管理人に連絡
+						->subject('Phiinoをご利用いただきありがとうございます。');
 				});
 			// ユーザーにはサンキューページを表示する
 			return View::make('contact.thanks')->with('data', $data);

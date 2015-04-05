@@ -1,7 +1,9 @@
 @extends('layouts.default')
 @section('content')
 
-
+<?php
+echo $post->author_id;
+?>
 <div class="container m-b-30 container-new">
 	<div class="row">
 		<div class="col-sm-12 col-md-8">
