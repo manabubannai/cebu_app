@@ -39,7 +39,7 @@
 				<li><a href="{{URL::to('/posts')}}">クラシファイド</a></li>
 				<li><a href="{{URL::to('/bbc')}}">質問掲示板</a></li>
 				<li><a href="http://phil-portal.com/philippines-ryugaku" target="new">学校情報</a></li>
-				<li><a href="http://phil-portal.com/" target="new">コラム</a></li>
+				<li><a href="{{URL::to('/school')}}" target="new">コラム</a></li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
@@ -70,7 +70,7 @@
 			</a>
 		</div>
 		<div class="col-xs-2">
-			<a href="http://phil-portal.com/" target="new">
+			<a href="{{URL::to('/school')}}" target="new">
 			{{ HTML::image('images/nav/column.png', 'column', array('class' => 'nav')) }}
 			</a>
 		</div>
