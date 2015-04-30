@@ -16,3 +16,12 @@
 <div class="footer dark-gray">
 	<p class="text-center copyright">Copyright &#169; 2014 PHIINO All Rights Reserved.</p>
 </div>
+
+<script>
+jQuery(document).ready(function($) {
+	jQuery('a[href^="http"]').not('[href*="phiino.com]').click(function() {
+		window.open(this.href, '');
+		return false;
+	});
+});
+</script>
