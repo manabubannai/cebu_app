@@ -1,7 +1,7 @@
 @extends('layouts.default')
 @section('content')
 
-<div class="container m-b-30 container-new">
+<div class="container m-b-30 container-new top-1">
 	<div class="row">
 		<div class="col-sm-12 col-md-8">
 			<h1 class="single-post-title m-b-30 add-padding"><i class="fa fa-pencil"></i> {{ $post->title }}</h1>
@@ -16,7 +16,7 @@
 
 			<div class="col-sm-12 col-md-6">
 				<p><i class="fa fa-check"></i> 投稿日：{{ date("Y年 m月 d日",strtotime($post->created_at)) }}</p>
-				<p><i class="fa fa-check"></i> 料金：{{ $post->price }}</p>
+				<p><i class="fa fa-check"></i> 料金：{{ $post->price }}ペソ</p>
 				<p><i class="fa fa-check"></i> カテゴリー：{{ $post->category->name }}</p>
 				<p><i class="fa fa-check"></i> 地域：{{ $post->area }}</p>
 			</div>

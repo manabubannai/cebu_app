@@ -1,14 +1,14 @@
 @extends('layouts.default')
 @section('content')
 
-<div class="container-fluid">
+<div class="container-fluid top-1">
 	<h1 class="text-center">みんなに聞こう｜質問掲示板</h1>
 	@include('bbc/search')
 </div>
 
 <div class="container container-new">
 	<div class="row">
-		<div class="col-xs-8">
+		<div class="col-xs-12 col-md-8">
 			@foreach($posts as $post)
 				<div class="for-bg">
 					<h2 class="no-space">
@@ -22,13 +22,16 @@
 						{{ $readmore }}
 					</p>
 					<p>{{ link_to("/bbc/{$post->id}", '続きを読む', array('class' => 'btn blue pull-right')) }}</p>
+					<?php
+					// dd($post);
+					?>
 					<p>コメント数：{{ $post->comment_count }}</p>
 					<hr />
 				</div>
 			@endforeach
 		</div>
 
-		<div class="col-xs-4">
+		<div class="col-md-4 col-xs-12 sp-none">
 			@include('side')
 		</div>
 

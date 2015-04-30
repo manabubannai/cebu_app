@@ -49,6 +49,7 @@ class BbccommentsController extends \BaseController {
 			$comment->comment = Input::get('comment');
 			$comment->post_id = Input::get('post_id');
 			$comment->save();
+			$comment->post->increment('comment_count');
 			return Redirect::back()
 				->with('message', '投稿が完了しました。');
 		}else{

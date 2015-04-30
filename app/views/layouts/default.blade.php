@@ -18,7 +18,7 @@
 
 	<link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
-	<title>{{ isset($title) ? $title : 'セブ島の総合情報サイト：PHIINO' }}</title>
+	<title>{{ isset($title) ? $title : 'セブ島の売ります／買いますサイト：PHIINO' }}</title>
 </head>
 <body>
 

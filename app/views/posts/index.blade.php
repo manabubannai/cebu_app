@@ -1,7 +1,7 @@
 @extends('layouts.default')
 @section('content')
 
-<div class="container-fluid">
+<div class="container-fluid top-1">
 	<h1 class="text-center">売ったり・買ったり｜クラシファイド一覧</h1>
 	@include('posts/search')
 </div>

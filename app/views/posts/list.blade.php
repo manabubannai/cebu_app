@@ -18,7 +18,7 @@
 				投稿日：{{ date("Y年 m月 d日",strtotime($post->created_at)) }}
 			</span><br />
 			<span class="space-right">
-				料金：{{ $post->price }}
+				料金：{{ $post->price }} ペソ
 			</span>
 			<span>
 				地域：{{ $post->area }}

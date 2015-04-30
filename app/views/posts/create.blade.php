@@ -71,7 +71,7 @@
 				</div>
 
 				<div class="form-group">
-					<label for="price" class="control-label">料金（円）</label>
+					<label for="price" class="control-label">料金（ペソ）</label>
 					<div class="">
 						{{ Form::text('price', null, array('class' => 'form-control')) }}
 					</div>

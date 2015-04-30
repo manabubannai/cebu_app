@@ -1,3 +1,5 @@
+</main>
+
 <div class="footer gray">
 	<p class="text-center">
 		{{ HTML::image('images/logo/footer-logo.png', 'logo-footer', array('class' => 'logo-footer')) }}

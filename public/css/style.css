@@ -82,6 +82,9 @@ ul li {
 .category ul li:before{
 	/*content: "・";*/
 }
+.cat-h3 {
+	margin-left: 10px;
+}
 
 /*----------------------------------------------------------*/
 /* クラシファイドシングルページ */
@@ -137,6 +140,9 @@ p pre{
 	padding: 0;
 	margin: 0;
 }
+.no-top-m {
+	margin-top: 0;
+}
 .space-right{
 	margin-right: 30px;
 }
@@ -152,6 +158,12 @@ p pre{
 .add-padding {
 	padding-right: 15px;
 	padding-left: 15px;
+}
+
+.navbar-fixed-top {
+	position: fixed;
+	right: 0;
+	left: 0;
 }
 
 
@@ -188,6 +200,8 @@ p pre{
 		margin-bottom: 50px;
 	}
 	.top10 {margin-top: 10px;}
+	.top30 {margin-top: 30px;}
+	.top50 {margin-top: 50px;}
 
 	/*----------------------------------------------------------*/
 	/* フッター */
@@ -218,20 +232,22 @@ p pre{
 		width: 105px;
 	}
 	.top-start {
-		margin: 0;
-		height: auto;
-		width: auto;
-	}
-	.top-1 {
-		/*margin-top: 60px;*/
-	}
+		  margin: 0;
+		  height: auto;
+		  width: auto;
+		  margin-top: 60px;
+		  border: 1px solid #D0D0D0;
+  	}
+	.top-1 {margin-top: 60px;}
+	div.top-10 {margin-top: 10px;}
+
 	.sp-no-m-b {margin-bottom: 0;}
 
 	/*----------------------------------------------------------*/
 	/* ナビバー */
 	/*----------------------------------------------------------*/
 	.sp-nav {
-		margin-top: 60px;
+		/*margin-top: 60px;*/
 	}
 	.navbar-header {
 		padding-bottom: 10px;

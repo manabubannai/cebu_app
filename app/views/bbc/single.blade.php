@@ -1,9 +1,9 @@
 @extends('layouts.default')
 @section('content')
 
-<div class="container container-new">
+<div class="container container-new top-1">
 	<div class="row">
-		<div class="col-xs-8">
+		<div class="col-xs-12 col-md-8">
 
 			<h2>タイトル：{{ $post->title }}
 				<small>投稿日：{{ date("Y年 m月 d日",strtotime($post->created_at)) }}</small>
@@ -62,7 +62,7 @@
 
 		</div>
 
-		<div class="col-xs-4">
+		<div class="col-xs-4 sp-none">
 			@include('side')
 		</div>
 	</div>

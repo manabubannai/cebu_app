@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="container top-1">
-	<div class="row col-xs-6 col-xs-offset-3">
+	<div class="row col-md-6 col-md-offset-3 col-xs-12">
 
 		<h1 class="m-b-30">会員登録ページ</h1>
 
