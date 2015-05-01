@@ -108,6 +108,10 @@ class PostSeeder extends Seeder{
 	$cat->save();
 
 	$cat = new Category;
+	$cat->name = "買います";
+	$cat->save();
+
+	$cat = new Category;
 	$cat->name = "その他";
 	$cat->save();
 

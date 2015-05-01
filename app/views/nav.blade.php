@@ -4,7 +4,7 @@
 	<div class="container-new">
 		<div class="row nav-header">
 			<div class="col-xs-12 col-md-8">
-				<p class="top10 sp-no-m-b">セブ島の売ります／買いますサイト：PHIINO（フィーノ）</p>
+				<p class="top10 sp-no-m-b">セブ島の売ったり・買ったり・探したり：PHIINO（フィーノ）</p>
 			</div>
 			<div class="col-xs-4 pull-right sp-none">
 				{{-- <span>PHIINOとは？</span> --}}
