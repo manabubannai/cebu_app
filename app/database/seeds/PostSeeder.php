@@ -3,36 +3,36 @@
 class PostSeeder extends Seeder{
 
 	public function run(){
-		$content = 'この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。';
+	// 	$content = 'この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。';
 
-		for( $i = 21 ; $i <= 40 ; $i++) {
-			$post = new Post;
-			$post->title = "$i 番目の投稿";
-			$post->author_id = 1;
-			$post->price = "1200";
-			$post->cat_id = 1;
-			$post->area = "セブ島";
-			$post->read_more = substr($content, 0, 120);
-			$post->content = $content;
-			$post->save();
-		}
+	// 	for( $i = 21 ; $i <= 40 ; $i++) {
+	// 		$post = new Post;
+	// 		$post->title = "$i 番目の投稿";
+	// 		$post->author_id = 1;
+	// 		$post->price = "1200";
+	// 		$post->cat_id = 1;
+	// 		$post->area = "セブ島";
+	// 		$post->read_more = substr($content, 0, 120);
+	// 		$post->content = $content;
+	// 		$post->save();
+	// 	}
 
-		$post = new Post;
-		$post->title = "Hoge番目の投稿";
-		$post->author_id = 1;
-		$post->price = "1200";
-		$post->cat_id = 1;
-		$post->area = "マクタン島";
-		$post->read_more = substr($content, 0, 120);
-		$post->content = $content;
-		$post->save();
+	// 	$post = new Post;
+	// 	$post->title = "Hoge番目の投稿";
+	// 	$post->author_id = 1;
+	// 	$post->price = "1200";
+	// 	$post->cat_id = 1;
+	// 	$post->area = "マクタン島";
+	// 	$post->read_more = substr($content, 0, 120);
+	// 	$post->content = $content;
+	// 	$post->save();
 
-	// アドミンユーザーの追加
-	$admin = new User;
-	$admin->email = "mnbmnb0524@gmail.com";
-	$admin->password = Hash::make("admin");
-	$admin->phone = 1111;
-	$admin->save();
+	// // アドミンユーザーの追加
+	// $admin = new User;
+	// $admin->email = "mnbmnb0524@gmail.com";
+	// $admin->password = Hash::make("admin");
+	// $admin->phone = 1111;
+	// $admin->save();
 
 	// カテゴリーを追加する
 	$cat = new Category;
